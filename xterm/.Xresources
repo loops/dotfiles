@@ -1,0 +1,31 @@
+XTerm*termName: xterm-256color
+XTerm*ScrollBar: false
+XTerm*fullscreen: false
+XTerm*utf8: 1
+
+XTerm*selectToClipboard: true
+
+! Use a nice truetype font and size by default... 
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 12
+xterm*faceSize1: 8
+xterm*faceSize2: 9
+xterm*faceSize3: 10
+xterm*faceSize4: 11
+xterm*faceSize5: 12
+xterm*faceSize6: 14
+
+# So that whitespace at end of each line in a selection is converted to a newline instead
+xterm.vt100.trimSelection: true
+
+xterm*vt100.translations: #override \n\
+	<Btn3Down>: ignore() \n\
+	<Btn3Up>: insert-selection(CLIPBOARD, CUT_BUFFER0) \n\
+	None <KeyPress> Insert:	insert-selection(CLIPBOARD, CUT_BUFFER0)
+
+
+! xterm*VT100.translations: #override \n\
+! Research the following for double wide characters
+! XTerm*faceName: xft:monospace:size=12
+! XTerm*faceNameDoublesize:   xft:Droid Sans Japanese:style=Regular
+
