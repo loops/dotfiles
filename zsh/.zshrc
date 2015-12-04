@@ -16,7 +16,7 @@ typeset -U path
 
 # Don't use vi alias
 unalias vi
-path=(~/dotfiles/commands ~/bin $path)
+path=(~/bin $path)
 
 # Ctrl-Z should return to Vim
 foreground-current-job() { fg 2>/dev/null; }
