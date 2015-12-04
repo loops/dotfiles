@@ -1,0 +1,9 @@
+#!/bin/bash
+export TMUX_PANE=1
+export LANG=en_US.UTF-8
+#tmux="/home/sean/tmux/bin/tmux -f /home/sean/config/tmux.conf"
+#tmux="/home/sean/src/tmux/obj/bin/tmux -f /home/sean/config/tmux.conf"
+#tmux="/home/sean/src/tmux/obj/bin/tmux -vvvvv -f /home/sean/config/tmux.conf"
+tmux="tmux -f /home/sean/config/tmux.conf"
+$tmux list-sessions &> /dev/null && exec $tmux attach
+exec $tmux

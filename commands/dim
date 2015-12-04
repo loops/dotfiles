@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $(xcalib -p -a | head -n1) = "0 0 0" ]]
+then
+	xcalib -clear
+	xcalib -red 1 1 40 -green 1 1 20 -blue 1 1 20 -alter
+	xcalib -co 60 -alter
+else
+	xcalib -clear
+fi

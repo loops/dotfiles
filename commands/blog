@@ -1,0 +1,3 @@
+#!/bin/bash
+[[ $1 == serve ]] && exec bundle exec jekyll serve -w
+exec bundle exec jekyll build

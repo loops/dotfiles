@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if	xrandr | fgrep -q "eDP1 connected ("
+then
+	xrandr --output eDP1 --auto
+else
+	xrandr --output eDP1 --off
+fi

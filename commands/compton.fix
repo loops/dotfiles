@@ -1,0 +1,3 @@
+#!/bin/bash
+PATH="/home/sean/devel/compton/out/usr/bin/:$PATH"
+exec compton -b

@@ -1,0 +1,5 @@
+#!/bin/bash
+XINPUT='/usr/bin/xinput'
+DEVICE='ETPS/2 Elantech Touchpad'
+"$XINPUT" set-prop "$DEVICE" "libinput Tapping Enabled" 1
+"$XINPUT" set-prop "$DEVICE" "libinput Natural Scrolling Enabled" 1

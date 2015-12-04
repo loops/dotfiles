@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#xrdb -merge ~/.Xdefaults
+
+HOST=$(echo -e "ace\nfox\nmax\nexo" | zenity 2>/dev/null --list --title "Start XTerm"  --column "Host")
+[[ -z $HOST ]] && exit
+[[ $HOST = "ace" ]] && exec xterm
+exec xterm $HOST
